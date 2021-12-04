@@ -246,4 +246,3 @@ mask = np.triu(np.ones_like(corr))
 # df.select_dtypes(include="object"), 
 # df.select_dtypes(include="object").mean() 등등
 
-
