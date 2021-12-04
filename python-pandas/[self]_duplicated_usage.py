@@ -4,6 +4,7 @@ import pandas as pd
 data = pd.DataFrame(source)
 
 # 중복 기준(특정 컬럼) 적어서 점검하기
+# keep 의 경우 아직 버리거나 둘 것을 특정하게 선택하지 않은 것으로 보임 
 data.duplicated('filter_column_name', keep = False)
 
 # 중복 기준(특정 컬럼) 적은채로 정렬하기
