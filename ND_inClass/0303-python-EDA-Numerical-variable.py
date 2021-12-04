@@ -242,4 +242,8 @@ mask = np.triu(np.ones_like(corr))
 # mask 파라미터는 0값이 곳은 출력을 하지 않나보다.
 
 
+# normalizing 과 standardization 은 0304 범주형 마지막에 공부했음.
+# df.select_dtypes(include="object"), 
+# df.select_dtypes(include="object").mean() 등등
+
 
