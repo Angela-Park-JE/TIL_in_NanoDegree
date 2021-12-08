@@ -35,14 +35,14 @@ sido_list = pd.DataFrame(response.json()["list"])
 sido_num = sido_list["sido_cd"].to_list()
 # sido_num
 
-# # -- for 문으로 반복 돌리기
+# -- for 문으로 반복 돌리기
 please_add_here = []
 for num in sido_num:
     s_list = pd.DataFrame(get_store_with_sido_num(num))
     please_add_here.append(s_list)
     all_store = pd.concat(please_add_here)
 
-all_store
+# all_store
 
 # -- 데이터 값 수정하기
 
@@ -63,7 +63,7 @@ all_store['sido_name'] = all_store['sido_name'].apply(lambda x : '강원' if x =
 
 # 결과
 pd.set_option('display.max_rows', None)
-all_store
+# all_store
 
 # 인덱스 정리하기
 all_store.reset_index(drop=True, inplace=True)
