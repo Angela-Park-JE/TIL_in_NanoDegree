@@ -9,10 +9,9 @@ ORDER BY ORDER_CONDITION; -- 정렬이 필요할 때
 SELECT *
 FROM EMPLOYEES;
 
--- 테이블 컬럼 선택해서 조회
-SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, SALARY 
-  --순서는 임의로 정해줄 수 있다.
-FROM EMPLOYEES;
+  -- 테이블 컬럼 선택해서 조회
+  SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, SALARY 
+  FROM EMPLOYEES; --순서는 임의로 정해줄 수 있다.
 
 
 -- -- WHERE 절 -- --
@@ -62,9 +61,9 @@ ORDER BY CO21[ASC|DESC] , COL2[ASC|DESC], ...
   
 -- ORDER BY 에 숫자를 명시할 수 있다
   -- 해당 테이블의 두번째 컬럼 순, 세번째 컬럼 역순으로 정렬하기.
-    SELECT * 
-    FROM EMPLOYEES
-    ORDER BY 2, 3 DESC
+  SELECT * 
+  FROM EMPLOYEES
+  ORDER BY 2, 3 DESC
 
 -- 불러오는 상태에서 특정 컬럼 명을 지정해서는 SELECT에 없어도 정렬이 가능하다. 
   SELECT COL1, COL2, COL3, COL4
@@ -84,3 +83,4 @@ ORDER BY CO21[ASC|DESC] , COL2[ASC|DESC], ...
   ORDER BY COMMISSION_PCT NULLS FIRST;
 -- NULL 이 먼저 나오고 NOT NULL들은 오름차순으로 나온다.
 -- 비교적 최근에 나온 기능이라 실제로 쓰는 사람이 많지 않다고.
+
