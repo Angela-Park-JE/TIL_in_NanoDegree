@@ -18,9 +18,9 @@ SELECT TRUNC(n1, n2) --* n1의 소수점 기준 n2자리에서 절사. 생략시
 -- 문자형 함수
 SELECT CONCAT(chr1, chr2) -- 두 문자 결합
 SELECT INITCAP(chr) -- chr의 첫 번째 문자를 대문자로 변환
-SELECT UPPER(chr)/LOWER(chr) --* 전부 대/소문자로 ㅂㄴ환
+SELECT UPPER(chr)/LOWER(chr) --* 전부 대/소문자로 변환
 SELECT LPAD(expr1, n, expr2)/RPAD(expr1, n, expr2) -- expr1를 반환하는데 expr2를 (n-expr1길이) 만큼 왼쪽/오른쪽을 채워 반환
-SELECT LTRIM(exper1, expr2)/RTRIM(exper1, expr2) -- 왼쪽/오른쪽에서 expr2를 제거
+SELECT LTRIM(expr1, expr2)/RTRIM(expr1, expr2) -- 왼쪽/오른쪽에서 expr2를 제거
 SELECT SUBSTR(chr, n1, n2) --* chr의 n1번째에서 시작해서 n2만큼 잘라낸 결과 반환. n1이 음수면 끝에서 부터. n2 생략시 시작부터 전부.
 SELECT TRIM(chr) --* 양쪽 끝의 공백 제거
 SELECT ASCII(chr) -- ASCII코드값 
