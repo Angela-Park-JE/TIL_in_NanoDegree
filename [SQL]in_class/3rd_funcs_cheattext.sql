@@ -28,3 +28,12 @@ SELECT LENGTH(chr) --* 문자의 글자 수 반환
 SELECT LENGTHB(chr) -- 문자의 바이트수 변환
 SELECT REPLACE(chr, serch_str, rep_str) --* serch_str을 찾아서 rep_str로 대체
 SELECT INSTR(chr1, chr2, n1, n2) --* chr1 에서 chr2를 찾아서 시작 위치 반환. n1은 몇 번째부터, n2는 찾은 것중 몇 번째를 가져올 것인지.
+
+-- 날짜형 함수
+SYSDATE --* 오라클이 설치된 컴퓨터 기준 현재 일자와 시간 반환
+ADD_MONTHS(date, n) --* date날짜에 n개월을 더한 날짜를 반환
+MONTHS_BETWEEN(d1, d2) -- d1과 d2두 날짜 사이의 개월 수 반환. d1-d2.
+LAST_DAY(date) -- date가 속한 월 마지막 일자 반환
+NEXT_DAY(date, expr) -- date 기준 expr에 명시한, 오는 날짜 반환(일요일=1)
+ROUND(date, format) -- date를 format 기준으로 반올림한 날짜 반환 , YYYY,MM,DD,HH,HH24,MI 등.
+TRUNC(date, formt) -- date를 format 기준으로 잘라낸 날짜 반환
