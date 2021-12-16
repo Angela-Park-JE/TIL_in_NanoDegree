@@ -29,9 +29,4 @@ WHERE ROWNUM<10;
 -- 8-2. 전체 로우 개수 확인하는 쿼리
 SELECT COUNT(*) AS COUNTS
 FROM orders;
--- 결과: 99441
-
-
-
-
-
+-- 결과: 99441로 COUNTS라는 컬럼아래 뜬다. 실제 데이터 셋과 일치함을 확인했다.
