@@ -40,7 +40,7 @@ GROUP BY job_id ;
 
 SELECT TO_CHAR(hire_date, 'YYYY') AS HIRE_YEAR
 FROM employees
-GROUP BY TO_CHAR(hire_date 'YYYY") ;
+GROUP BY TO_CHAR(hire_date 'YYYY') ;
 -- 입사년도 별 집계. 
 
 
@@ -56,6 +56,6 @@ SELECT TO_CHAR(gire_date, 'YYYY') AS HIRE_YEAR,
 FROM employees
 WHERE TO_CHAR(hire_date, 'YYYY') >= '2004'
 GROUP BY TO_CHAR(hire_date, 'YYYY'), department_id
-ORDER BY 1,2 ; 
+ORDER BY 1, 2 ; 
 -- 2004년 이후 입사한 사람들 중 입사년도 별 부서 별 인원수, 급여 총액, 급여 평균(정수)
 
