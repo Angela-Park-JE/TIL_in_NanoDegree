@@ -25,7 +25,7 @@ SELECT SUBSTR(chr, n1, n2) --* chr의 n1번째에서 시작해서 n2만큼 잘�
 SELECT TRIM(chr) --* 양쪽 끝의 공백 제거
 SELECT ASCII(chr) -- ASCII코드값 
 SELECT LENGTH(chr) --* 문자의 글자 수 반환
-SELECT LENGTHB(chr) -- 문자의 바이트수 변환
+SELECT LENGTHB(chr) -- 문자의 바이트 수 반환
 SELECT REPLACE(chr, serch_str, rep_str) --* serch_str을 찾아서 rep_str로 대체
 SELECT INSTR(chr1, chr2, n1, n2) --* chr1 에서 chr2를 찾아서 시작 위치 반환. n1은 몇 번째부터, n2는 찾은 것중 몇 번째를 가져올 것인지.
 
