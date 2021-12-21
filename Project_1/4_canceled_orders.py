@@ -42,9 +42,11 @@ df_scdprice.groupby(by='STATUS').mean()[['PRICE']]
 
 # 4. 셀러별 취소건 개수는 분포가 어떨까? 특별히 많은 사람이 있을까?
 sns.countplot(data=df_canceled_orders, x="SELLER_ID")
-    # 보통은 한 건인데 4건이상인 사람들은 문제가 있어보인다.
+    # 보통은 한 건인데 4번 이상인 사람들은 문제가 있어보인다.
 
-# 4-1. 취소 건수가 많은(4번 이상인) 셀러들
+# 4-1. 취소 건수가 많은(4번 이상인) 셀러들을 보고싶은데...
 # 여기서 잠깐, 원래 많이 팔다보니 취소 건 비율도 늘어나는 것일 수 있다.
 # 그렇기에 df_canceled_orders 데이터만 볼것이 아니라 df_selocus 을 보는게 나을 수 있다.
+df_canceled_orders1.describe(include="all")[["SELLER_ID","CATEGORY","PRICE"]]
 
+#-- 중단
