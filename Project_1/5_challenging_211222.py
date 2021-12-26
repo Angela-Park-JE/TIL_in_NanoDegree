@@ -1,14 +1,10 @@
 
 #-- load library
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-
-
 #-- for windows
-
 df_sellers = pd.read_csv("C:/Users/djroz/Desktop/PJT1_dataset/olist_sellers_dataset.csv")
 df_orders = pd.read_csv("C:/Users/djroz/Desktop/PJT1_dataset/olist_orders_dataset.csv")
 df_oitems = pd.read_csv("C:/Users/djroz/Desktop/PJT1_dataset/olist_order_items_dataset.csv")
@@ -25,8 +21,8 @@ df_selocus = pd.read_csv("C:/Users/djroz/Desktop/PJT1_dataset/sel_ord_cus.csv")
 df_sel = pd.read_csv("C:/Users/djroz/Desktop/PJT1_dataset/sellers.csv")
 
 
-#-- data load sample
 
+#-- data load sample
 df_sellers["seller_id"].describe()
 
 df_sel["SELLER_ID"].describe()
@@ -47,7 +43,6 @@ print("payments 컬럼명: ", df_opay.columns.tolist())
 print("customers 컬럼명: ", df_cus.columns.tolist())
 print("reviews 컬럼명: ", df_rev.columns.tolist())
 print("geolocations 컬럼명: ", df_geo.columns.tolist())
-
 #-- column name print2
 print("oitem-pay-price 컬럼명: ", df_oitempp.columns.tolist())
 print("seller-customer-deliv-pay 컬럼명: ", df_scdpay.columns.tolist())
@@ -84,10 +79,10 @@ term2 = (df_selocus['STATUS']=='delivered')
 
 
 # 중복 데이터 제거하기3
-# 데려온 오더 중
+    # (데려온 오더 중)
 df_deliverd.isna().sum()
 df_deliverd["APPROVED_AT"].isna()
-# 위에서 확인한 결측치를 가진 데이터만 불러와본다.
+    # 위에서 확인한 결측치를 가진 데이터만 불러와본다.
 df_deliverd[(df_deliverd["APPROVED_AT"].isna())|(df_deliverd["DELIV_CARRIER_DATE"].isna())|(df_deliverd["DELIV_CUSTOMER_DATE"].isna())|(df_deliverd["ESTIMATED_DELIV"].isna())]
 
 # 결측값이 들어있는 행 전체 삭제하기(delete row with NaN) : df.dropna(axis=0)
