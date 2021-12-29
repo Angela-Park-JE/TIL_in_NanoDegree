@@ -1,0 +1,39 @@
+# 주피터 노트북 테마 바꾸기
+https://realblack0.github.io/2020/05/13/jupyter-notebook-themes.html
+
+jt -t onedork -fs 115 -nfs 125 -tfs 115 -dfs 115 -ofs 115 -cursc r -cellw 80% -lineh 115 -altmd  -kl -T -N
+
+옵션 설명 적어드립니다. 커스텀에 참고하세요.
+
+-fs 115 : 코드 폰트 사이즈
+
+-nfs 125 : 노트북 메뉴 폰트 사이즈
+
+-tfs 115 : 마크다운 폰트 사이즈
+
+-dfs 115 : pandas DataFrame 폰트 크기
+
+-ofs 115 : Output 영역 폰트 크기
+
+-cursc r : cursor 색 red (onedork theme에서는 red가 가장 눈에 띄는 듯)
+
+-cellw 80% : 셀 가로 길이 80% (숫자 클수록 화면에 꽉참)
+
+-lineh 115 : 코드 줄 간격
+
+-altmd : 마크다운 셀의 배경을 투명하게 하는 옵션
+
+-kl : 커널 로고 표시 (노트북 화면 우상단에 python 로고)
+
+-T : 메뉴탭 아래에 툴바 표시 (저장, 셀 추가/삭제/이동, 커널 중단/재실행 등)
+
+-N : 노트북 화면에서 파일명 표시
+
+
+
+
+# dark
+jt -t onedork -fs 95 -altp -tfs 11 -nfs 115 -cellw 88% -T
+
+# light
+jt -t grade3 -fs 95 -altp -tfs 11 -nfs 115 -cellw 88% -T
