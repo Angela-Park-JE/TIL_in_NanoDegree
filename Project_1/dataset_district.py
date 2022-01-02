@@ -1,4 +1,4 @@
-도시-주-타주 별로 나눠보기
+# 도시-주-타주 별로 나눠보기
 
 
 
@@ -158,7 +158,7 @@ df_diff_states["gap_limit_esti_indiffstates"] = df_diff_states['shipping_limit_d
 
 
 -----
-숫자만 보기
+# 숫자만 보기
 
 df_same_city -> same_city
 4978 rows × 11 columns
@@ -177,19 +177,58 @@ delivered 된 96455 개에서 95977 -> 478 개 :
 시간 데이터나 발송, 수신자 지역이 명확하지 않은 것 전부 지워진것.
 
 
-셀러 주소 명확하지 않은 것 215
-고객 주소 명확하지 않은 것 264
-합은 479
-둘 다 명확하지 않은 것이 있었기에 총 지워진 것이 278 개가 되었을 것.
+# 셀러 주소 명확하지 않은 것 215
+# 고객 주소 명확하지 않은 것 264
+# 합은 479
+# 둘 다 명확하지 않은 것이 있었기에 총 지워진 것이 278 개가 되었을 것.
 
 
 
-
- df_same_city
+ # df_same_city
  [['order_id', 'customer_id', 'seller_id', 'order_purchase_timestamp', 'order_approved_at', 'order_delivered_carrier_date', 'order_delivered_customer_date', 'order_estimated_delivery_date', 'shipping_limit_date', 'del_lead_time_insamecity', 'esti_lead_time_insamecity', 'gap_esti_real_insamecity', 'gap_limit_real_insamecity', 'gap_limit_esti_insamecity','seller_city', 'seller_state', 'customer_city', 'customer_state']]
 
- df_same_state
+ # df_same_state
  [['order_id', 'customer_id', 'seller_id', 'order_purchase_timestamp', 'order_approved_at', 'order_delivered_carrier_date', 'order_delivered_customer_date', 'order_estimated_delivery_date', 'shipping_limit_date', 'del_lead_time_insamestate', 'esti_lead_time_insamestate', 'gap_esti_real_insamestate', 'gap_limit_real_insamestate', 'gap_limit_esti_insamestate', 'seller_city', 'seller_state', 'customer_city', 'customer_state']]
 
- df_diff_states
+ # df_diff_states
  [['order_id', 'customer_id', 'seller_id', 'order_purchase_timestamp', 'order_approved_at', 'order_delivered_carrier_date', 'order_delivered_customer_date', 'order_estimated_delivery_date', 'shipping_limit_date',  'del_lead_time_indiffstates', 'esti_lead_time_indiffstates', 'gap_esti_real_indiffstates', 'gap_limit_real_indiffstates', 'gap_limit_esti_indiffstates', 'seller_city', 'seller_state', 'customer_city', 'customer_state']]
+
+
+
+
+# 상관관계 구하려 할 때 시작 점
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib as ml
+import seaborn as sns
+import folium as fm
+
+import time
+import datetime
+
+# -- df_all 쓸 컬럼들
+del_lead_time
+esti_lead_time
+gap_esti_real
+gap_limit_real
+gap_limit_esti
+review-del : 크면 클수록 받고도 늦게 남긴 것
+
+--
+
+same_city.info()
+Int64Index: 4978 entries, 19 to 96396
+
+same_state.info()
+Int64Index: 29545 entries, 0 to 96451
+
+diff_states.info()
+Int64Index: 61932 entries, 1 to 96454
+
+# -> 이떄 diff_states 에는 지역정보가 없는 경우도 함께 있다.
+# -> 하지만 타임 관련해서는 drop을 다 했기 때문에 결측이 안나오므로 그대로 사용하기로 하였다.
+
+
+
