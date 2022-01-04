@@ -16,9 +16,11 @@ import matplotlib.pyplot as plt
 df = sns.load_dataset("mpg")
 df
 
-# 데이터셋 일부만 확인하기
+# 데이터셋 일부만 확인하기 - 기본은 5이고, 괄호 안에 정수를 넣어 원하는 로우수 만큼 불러올 수 있다.
 df.head()
 df.tail()
+# sample()은 무작위로 추출하는데 기본은 1개의 로우만 가져온다.
+df.sample()
 # 데이터셋 요약하기
 df.info()
 
@@ -26,7 +28,7 @@ df.info()
 df.isna()
 # 결측치 개수 확인하기
 df.isnull().sum()
-# 히트맵으로 확인해보기 : 씨본 활용
+# 히트맵으로 확인해보기 : 씨본 활용, cmap : 컬러셋 내에서 원하는 컬러로 지정할 수 있다.
 sns.heatmap(df.isnull(), cmap = "Greys_r")
 # 구매내역같은 시계열 데이터의 경우, 이런 히트맵들을 활용해서 확인할 수 있다.
 
@@ -36,6 +38,8 @@ sns.heatmap(df.isnull(), cmap = "Greys_r")
 df.describe()
 # 범주형 데이터에 대한 통계량 바로 보기
 df.describe(include = "object")
+# 모든 데이터에 대한 통계량 보기
+df.describe(include = "all")
 
 # 유일값 개수 보기
 df.nunique()
@@ -58,7 +62,7 @@ df[["origin","cylinders"]].value_counts()
 # countplot에 hue 이용하기
 sns.countplot(data=df, x = "origin", hue = "cylinders")
 # 카운트플롯은 두 축이 다 지정될 수 없는데
-# hue를 이용하면 색상으로 구분하여 두 가지를 같이 보기 가능하다.
+# hue를 이용하면 색상으로 구분하여 한 가지 컬럼을 더 가져와서 두 가지를 같이 보기 가능하다.
 # x와 hue 둘을 서로 바꾸어 보기도 가능하다.
 
 # 두 개이상은 피봇 테이블이나 그룹바이를 쓸 수도 있지만 판다스에서는 크로스탭을 쓸 수 있다.
@@ -249,5 +253,4 @@ sns.catplot(data=df_norml, kind="box")
 ### 크로스탭, 피봇테이블, 그룹바이 나누어진 이유
 # 크로스탭 피봇 그룹바이 다있는 이유 모두가 쓸 수 있도록 해놓았다.
 # 굳이 여러가지를 만들어둔 이유는 추상화 해서 사용하기 쉽게 만들어 둔 것이다.
-
 
