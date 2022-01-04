@@ -72,9 +72,19 @@ while True:
 		break
 
 
+		
+### 함수 만들기 
+#- 평균을 구하는 함수
+def average(parameter):
+	avg = sum(parameter) / len(parameter)
+	return avg
 
-### 함수 만들기
-
+#- 합을 구하는 함수
+def total_sum(parameter):
+	sum_n = 0
+	for n in num:
+		sum_n = sum_n + n
+	return sum_n
 
 
 
