@@ -37,3 +37,16 @@ jt -t onedork -fs 95 -altp -tfs 11 -nfs 115 -cellw 88% -T
 
 # light
 jt -t grade3 -fs 95 -altp -tfs 11 -nfs 115 -cellw 88% -T
+
+
+# 내가 한 것 -altp를 그대로 적용시키면 실행 순서 숫자가 나타나지 않았었다.
+jt -t grade3 -fs 115 -nfs 125 -tfs 115 -dfs 115 -ofs 115 -cursc r -cellw 80% -lineh 115 -altmd  -kl -T -N
+
+
+
+# 공식문서에서 제공하는 설정 코드
+jt  [-h] [-l] [-t THEME] [-f MONOFONT] [-fs MONOSIZE] [-nf NBFONT]
+    [-nfs NBFONTSIZE] [-tf TCFONT] [-tfs TCFONTSIZE] [-dfs DFFONTSIZE]
+    [-m MARGINS] [-cursw CURSORWIDTH] [-cursc CURSORCOLOR] [-vim]
+    [-cellw CELLWIDTH] [-lineh LINEHEIGHT] [-altp] [-altmd] [-altout]
+    [-P] [-T] [-N] [-r] [-dfonts]
