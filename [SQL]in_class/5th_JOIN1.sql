@@ -50,4 +50,4 @@ ORDER BY 1;
 
 
 -- 8. 샘플 파일 넣고 F5하기
-
+-- covid sample csv
