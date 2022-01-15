@@ -38,8 +38,10 @@ FROM DUAL;
 
 -- 2021년 10월 31일은 서기가 시작된 이후 몇 일이 지난 걸까
 
+-- (1)
 SELECT TO_DATE('2021-10-31') - TO_DATE('0001-01-01') -- 내가 한 것
 FROM DUAL;
 
+-- (2)
 SELECT TO_DATE('2021-10-31', 'YYYY-MM-DD') - TO_DATE('0001-01-01', 'YYYY-MM-DD') -- 전답
 FROM DUAL;
