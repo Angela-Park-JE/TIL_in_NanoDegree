@@ -16,7 +16,6 @@ SELECT employee_id, first_name, last_name, salary , commission_pct,
 FROM employees;    
 
 
-
 -- 오늘 이후 1년 날짜 구하기
 
 -- (1)
@@ -26,7 +25,6 @@ FROM DUAL;
 --(2)
 SELECT SYSDATE + 365
 FROM DUAL;
-
 
 
 -- 특정 날짜 기준으로 그 달 말일의 요일 구하기
