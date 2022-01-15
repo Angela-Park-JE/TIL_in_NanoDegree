@@ -16,18 +16,30 @@ SELECT employee_id, first_name, last_name, salary , commission_pct,
 FROM employees;    
 
 
+
 -- 오늘 이후 1년 날짜 구하기
 
 -- (1)
 SELECT ADD_MONTHS(SYSDATE, 12)
 FROM DUAL;
 
---(2)
-SELECT SYSDATE + 365
+-- (2) 3년 뒤를 날짜 더하기로 구한다면
+SELECT SYSDATE + 365*3
 FROM DUAL;
+
 
 
 -- 특정 날짜 기준으로 그 달 말일의 요일 구하기
 
 SELECT TO_CHAR(LAST_DATE(TO_DATE('2022-01-14')), 'DAY') AS lastday
+FROM DUAL;
+
+
+
+-- 2021년 10월 31일은 서기가 시작된 이후 몇 일이 지난 걸까
+
+SELECT TO_DATE('2021-10-31') - TO_DATE('0001-01-01') -- 내가 한 것
+FROM DUAL;
+
+SELECT TO_DATE('2021-10-31', 'YYYY-MM-DD') - TO_DATE('0001-01-01', 'YYYY-MM-DD') -- 전답
 FROM DUAL;
