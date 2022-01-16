@@ -69,8 +69,8 @@ FROM employees;
 
 --* 2021년 10월 31일은 서기가 시작된 후 몇 일이나 지났을까.
 --> MINE: 돌아가지도 않는다. 
-SELECT TO_NUMBER(TO_CHAR('2021-10-31', 'DDD')) + 2020*365
-FROM DUAL; 
+-- SELECT TO_NUMBER(TO_CHAR('2021-10-31', 'DDD')) + 2020*365
+-- FROM DUAL; 
 
 --> TEACHER: DATE가 SYSDATE여도 돌아가는 쿼리이다.
 SELECT TO_DATE('2021-10-31', 'YYYY-MM-DD') - TO_DATE('0001-01-01', 'YYYY-MM-DD')
