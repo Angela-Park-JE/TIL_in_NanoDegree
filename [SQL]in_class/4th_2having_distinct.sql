@@ -20,6 +20,7 @@ HAVING COUNT(*) > 1
 ORDER BY 1, 2;
 
 
+
 -- 4. DISTINCT 
 ---- DISTINCT 뒤에 명시한 표현식(컬럼)의 고유한 값을 조회
 ---- 집계 함수 없이 GROUP BY 절만 사용하면, 원하는 컬럼이나 표현식의 고유한 값을 얻을 수 있는데,
@@ -39,6 +40,7 @@ FROM employees
 ORDER BY 1, 2 ;
 
 
+
 -- 7. ROLLUP(): 소계(sub total)
 ---- ROLLUP에 명시한 표현식 수 + 1개를 그룹으로 묶음
 ---- col1에 대한 소계, col1과 col2와 소계, 그리고 전체 합계
@@ -46,14 +48,12 @@ SELECT col1, col2, SUM(col3)
 FROM table1
 GROUP BY ROLLUP(col1, col2)...
 
-
 -- 8. CUBE(): 가능한 모든 조합에 대한 소계
 ---- CUBE 절에 명시한 표현식 수(콤마로 구분된 수)가 n개면 2의 n승계의 조합
 ---- 결과가 많고 복잡하게 나와서 생각보다 많이 안쓴다.
 SELECT col1, col2, SUM(col3)
 FROM table1
 GROUP BY CUBE(col1, col2) ...
-
 
 -- 9. ROLLUP과 CUBE 예시: job_id 별 phone_number 별 salary의 합계 
 SELECT SUBSTR(phone_number, 1, 3), -- phone_number 컬럼을 첫번째 부터 3자리 가져온다
