@@ -1,9 +1,10 @@
 # 주피터 노트북 테마 바꾸기
 https://realblack0.github.io/2020/05/13/jupyter-notebook-themes.html
 
+# 블로거 추천 테마 (밝음)
 jt -t onedork -fs 115 -nfs 125 -tfs 115 -dfs 115 -ofs 115 -cursc r -cellw 80% -lineh 115 -altmd  -kl -T -N
 
-옵션 설명 적어드립니다. 커스텀에 참고하세요.
+# 옵션 설명 적어드립니다. 커스텀에 참고하세요.
 
 -fs 115 : 코드 폰트 사이즈
 
@@ -31,7 +32,6 @@ jt -t onedork -fs 115 -nfs 125 -tfs 115 -dfs 115 -ofs 115 -cursc r -cellw 80% -l
 
 
 
-
 # dark
 jt -t onedork -fs 95 -altp -tfs 11 -nfs 115 -cellw 88% -T
 
@@ -40,7 +40,7 @@ jt -t grade3 -fs 95 -altp -tfs 11 -nfs 115 -cellw 88% -T
 
 
 # 내가 한 것 -altp를 그대로 적용시키면 실행 순서 숫자가 나타나지 않았었다.
-jt -t grade3 -fs 115 -nfs 125 -tfs 115 -dfs 115 -ofs 115 -cursc r -cellw 80% -lineh 115 -altmd  -kl -T -N
+jt -t chesterish -fs 110 -nfs 125 -tfs 110 -dfs 115 -ofs 115 -cursc p -cellw 80% -lineh 115 -altmd  -kl -T -N
 
 
 
