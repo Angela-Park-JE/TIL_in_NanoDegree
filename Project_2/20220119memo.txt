@@ -1,4 +1,4 @@
-# 20220119 영화코드 목록 받아오기
+# 20220119 영화코드 목록 받아오기 메모
 # import Beautifulsoup 
 # import pandas
 
