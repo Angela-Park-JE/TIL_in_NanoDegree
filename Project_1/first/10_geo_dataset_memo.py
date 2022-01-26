@@ -2,7 +2,7 @@ df_sel_geo.to_csv("01_df_sel_geo.csv")
 df_cus_geo.to_csv("02_df_cus_geo.csv")
 
 
-# 1차 분석에서는 null을 drop 한다.
+# 1차 분석에서는 null을 drop 한다. 
 df_sel_geo.dropna(inplace=True)
 df_cus_geo.dropna(inplace=True)
 
@@ -228,3 +228,4 @@ rev_answer_timestamp             1743
 
 df_diff_states.to_csv("13_df_diff_states.csv")
 
+  
