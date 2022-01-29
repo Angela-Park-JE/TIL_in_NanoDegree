@@ -15,11 +15,13 @@ else:
 
 
 #--- 더 짧게 할 수 있는 방법
+
 num_list = input("세 개의 수를 띄어쓰기로 입력하세요.").split()
 sorted(num_list)
 if int(num_list[2]) >= int(num_list[0])+int(num_list[1]):
     print("삼각형을 만들 수 없어요.")
 else:
 	print("삼각형을 만들 수 있어요.")
+
 # 더 짧게 쓸 수는 있었지만 줄을 줄여놓고 정렬을 위해 int를 쓰려고 하기 어려웠다,
 # 그래서 if 문에서 대소비교 할 때 int()를 씌웠다.
