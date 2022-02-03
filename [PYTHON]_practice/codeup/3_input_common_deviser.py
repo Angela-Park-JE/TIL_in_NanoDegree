@@ -23,8 +23,3 @@ for n in range(len(d_list1))
     if d_list1[n] == d_list2[n]:
     	cd_list.append(d_list1[n])
 print(cd_list)
-
-
-
-
-
