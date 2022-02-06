@@ -7,6 +7,7 @@ import requests
 from bs4 import BeautifulSoup as bs
 
 
+
 ### page info
 movie_code = {movie_code}
 url=f"https://movie.naver.com/movie/bi/mi/pointWriteFormList.naver?code={movie_code}&type=after&isActualPointWriteExecute=false&isMileageSubscriptionAlready=false&isMileageSubscriptionReject=false"    
@@ -14,6 +15,7 @@ headers={'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537
 response=requests.get(url,headers=headers) 
 html = bs(response.text,'lxml')
 # the movie_code maybe one or more (we have to use 'for' repeat sentence to more movie_code's.)
+
 
 
 ### crawling the end of page 
@@ -26,6 +28,7 @@ page_end = int(cnt / 10)
 if cnt % 10 != 0:
     page_end += 1
 print(page_end)
+
 
 
 ### definite a function to crawling 
@@ -85,6 +88,12 @@ def get_review_list(page_no, review_list, movie_code):
         review_list.append(info_dic)
 
 
-### real crawling with 'while' repeat
 
+### real crawling with 'while' repeat
+review_list = []
+page_no = 1
+
+while (page_no <= page_end):
+    get_review_list(page_no, review_list, movie_code)
+    page_no += 1
 
