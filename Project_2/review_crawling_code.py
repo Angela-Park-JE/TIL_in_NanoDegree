@@ -13,6 +13,7 @@ url=f"https://movie.naver.com/movie/bi/mi/pointWriteFormList.naver?code={movie_c
 headers={'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36'}
 response=requests.get(url,headers=headers) 
 html = bs(response.text,'lxml')
+# the movie_code maybe one or more (we have to use 'for' repeat sentence to more movie_code's.)
 
 
 ### crawling the end of page 
@@ -24,7 +25,6 @@ cnt = int(total[0].text.replace(',',''))
 page_end = int(cnt / 10)
 if cnt % 10 != 0:
     page_end += 1
-
 print(page_end)
 
 
