@@ -288,4 +288,4 @@ Installing collected packages: tzdata, pytz-deprecation-shim, tzlocal, rpy2, plo
     Uninstalling plotly-5.4.0:
       Successfully uninstalled plotly-5.4.0
 Successfully installed plotly-5.5.0 pytz-deprecation-shim-0.1.0.post0 rpy2-3.1.0 tzdata-2021.5 tzlocal-4.1
-(base) Angela@gwagsalaui-MacBook-Pro ~ % 
+(base) Angela@gwagsalaui-MacBook-Pro ~ %  
