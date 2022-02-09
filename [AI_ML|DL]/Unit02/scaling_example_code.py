@@ -13,21 +13,21 @@ np.random.seed(0)
 
 
 ### sampling 1000 data points in exponential distribution using numpy randomly
-original_data = np.random.exponential(size=1000)
+original_data = np.random.exponential(size = 1000)
 
 
 ### mix-max : make the data scale in 0 to 1
-scaled_data = minmax_scaling(original_data, columns=[0])
+scaled_data = minmax_scaling(original_data, columns = [0])
 
 
 ### visualizating and comparing
-fig, ax = plt.subplots(1,2) # 한 열에 두 개의 서브 플롯을 만들겠다.
-sns.distplot(original_data, ax=ax[0]) # 그래프를 0번째에 그리고
+fig, ax = plt.subplots(1, 2) # 한 열에 두 개의 서브 플롯을 만들겠다.
+sns.distplot(original_data, ax = ax[0]) # 그래프를 0번째에 그리고
 ax[0].set_title("Original Data") # 1행 0번 제목을 추가해준 것!
-sns.distplot(scaled_data, ax=ax[1]) # 그래프를 1번째에 그리고 - 서브플롯으로 묶여있어서 가능한 일이다.
+sns.distplot(scaled_data, ax = ax[1]) # 그래프를 1번째에 그리고 - 서브플롯으로 묶여있어서 가능한 일이다.
 ax[1].set_title("Scaled data") # 1행 1번 제목을 준 것.
 
 
-##3# changing skewness direction: put in log function 'original_data'
+### changing skewness direction: put in log function 'original_data'
 # You can use this when the values(distribution?) of origin data lean to the left too much 
 sns.distplot(np.log(original_data))
