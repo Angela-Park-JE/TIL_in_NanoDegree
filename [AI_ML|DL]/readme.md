@@ -1,5 +1,5 @@
 # AI Basic class notes
-Machine Learning and Deep Learning Class in Nano Degree
+🍒 Machine Learning and Deep Learning Class in Nano Degree
 
 ### Unit1
 
