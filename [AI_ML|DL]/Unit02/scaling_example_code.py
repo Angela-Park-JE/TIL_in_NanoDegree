@@ -28,5 +28,6 @@ sns.distplot(scaled_data, ax=ax[1]) # 그래프를 1번째에 그리고 - 서브
 ax[1].set_title("Scaled data") # 1행 1번 제목을 준 것.
 
 
-# 왼쪽으로 치우친 것을 log 함수를 넣었을 때 우측으로 왜도가 변한다. 
+##3# changing skewness direction: put in log function 'original_data'
+# You can use this when the values(distribution?) of origin data lean to the left too much 
 sns.distplot(np.log(original_data))
