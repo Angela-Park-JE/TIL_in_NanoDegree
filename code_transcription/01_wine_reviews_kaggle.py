@@ -1,4 +1,4 @@
-# importing required packages.
+### importing required packages.
 
 import pandas as pd
 import seaborn as sns
@@ -16,7 +16,8 @@ from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_sc
 wine = pd.read_csv('/content/drive/MyDrive/AI/2nd/winemag-data-130k-v2 (1).csv')
 
 
-# viewing
+
+### viewing
 wine.head()
 wine.info()
 wine.country
@@ -26,7 +27,7 @@ wine.iloc[-3:] # 끝에서 3줄 가져오기
 
 
 
-# EDA little 1
+### EDA little 1
 
 wine.loc[:,['taster_name','taster_twitter_handle','points']]
 wine.country.unique()
@@ -35,4 +36,7 @@ wine.loc[wine.country == 'US']
 wine.loc[wine.country.isin(['Italy', 'France', 'Spain'])]
 
 
-# EDA little 2 : by country
+
+### EDA little 2 : by country
+
+by_country = wine.groupby(['country', 'points']).taster_name.agg('count')
