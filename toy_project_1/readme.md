@@ -7,7 +7,7 @@ this is list up of my toy-projects.
 ---
 
 ## 1. Olist - Brazil Ecommerce data set
-
+reference : https://www.kaggle.com/olistbr/brazilian-ecommerce
 
 
 ---
