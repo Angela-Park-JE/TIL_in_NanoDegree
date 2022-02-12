@@ -1,3 +1,4 @@
+### tqdm 용법
 # for 문으로 돌릴 때 진행 상황을 볼 수 있도록 하는 라이브러리이다.
 from tqdm import tqdm 
 
