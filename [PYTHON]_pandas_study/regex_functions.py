@@ -1,5 +1,6 @@
 
 ### 4 finding methods.
+# https://ponyozzang.tistory.com/279
 
 ### match(pattern, string)
 # 문자열의 시작 부분부터 패턴과 매칭이 되는지 검색하는 함수
@@ -56,6 +57,3 @@ for match in iterator:
 	print match.start() # 1回目: 0 2回目: 6
 	print match.end() # 1回目: 2 2回目: 8
 	print match.span() # 1回目: (0, 2) 2回目: (6, 8)
-
-
-
