@@ -29,7 +29,7 @@ wine.iloc[-3:] # 끝에서 3줄 가져오기
 
 
 
-### EDA little 1
+### 1
 wine.loc[:,['taster_name','taster_twitter_handle','points']]
 wine.country.unique()
 wine.country == 'US'
@@ -38,5 +38,5 @@ wine.loc[wine.country.isin(['Italy', 'France', 'Spain'])]
 
 
 
-### EDA little 2 : by country
+### 2: by country
 by_country = wine.groupby(['country', 'points']).taster_name.agg('count')
