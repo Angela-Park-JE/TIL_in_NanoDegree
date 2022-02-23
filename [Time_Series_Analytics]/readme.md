@@ -26,7 +26,7 @@
   - 시계열분석은 1D CNN
 
 
-##3. Seq2Seq
+## 3. Seq2Seq
 - CNN-LSTM 결합 모델
 - Seq2Seq 의 구조
   - 예시: AWS의 DeepAR+
