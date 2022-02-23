@@ -29,4 +29,5 @@
 ## 3. Seq2Seq
 - CNN-LSTM 결합 모델
 - Seq2Seq 의 구조
-  - 예시: AWS의 DeepAR+
+- RNN-RNN 결합모델
+- 예시: AWS의 DeepAR+
