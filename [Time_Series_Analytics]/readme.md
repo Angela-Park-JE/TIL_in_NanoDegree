@@ -20,6 +20,14 @@
   - RNN의 variation
   - 시계열분석에서의 RNN의 한계: 과거 데이터의 출력이 현재를 설명할 수 있어야 RNN을 쓸 수 있다.
   - 실습예시: LSTM
+  - DRNN
 - CNN
   - 이미지 분석에서의 CNN
   - 시계열분석은 1D CNN
+
+
+
+3. Seq2Seq
+- CNN-LSTM 결합 모델
+- Seq2Seq 의 구조
+  - 예시: AWS의 DeepAR+
