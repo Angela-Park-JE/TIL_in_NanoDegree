@@ -34,4 +34,6 @@
 - RNN-RNN 결합모델
 - 예시: AWS의 DeepAR+
 
-- 시계열분석의 한계점와 using alternative data
+- 시계열분석의 한계점과 using alternative data
+
+
