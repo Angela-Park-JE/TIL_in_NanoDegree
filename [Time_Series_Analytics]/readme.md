@@ -4,8 +4,10 @@
 ## 1. 시계열 분석 
 - 시계열 데이터 특징
 - 시계열 분석의 절차
-- AR
-- MA
+
+- AR(auto regression): 자기상관모형
+- MA(moving average): 이동평균모형
+
 - ARIMA
 - SARIMA
 
@@ -31,3 +33,5 @@
 - Seq2Seq 의 구조
 - RNN-RNN 결합모델
 - 예시: AWS의 DeepAR+
+
+- 시계열분석의 한계점와 using alternative data
