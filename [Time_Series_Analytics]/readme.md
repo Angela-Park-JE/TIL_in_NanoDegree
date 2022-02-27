@@ -38,7 +38,7 @@
 
 
 ## 4. AutoEncoder & GAN
-- ARIMA가 여전히 많이 쓰이고 시계열분석이 딥러닝 모델을 단순히 쓸 수 없는 이유
+- ARIMA가 여전히 많이 쓰이는 이유와 시계열분석이 딥러닝 모델을 단순히 쓸 수 없는 이유
 - AutoEncoder
   - 인풋과 같은 아웃풋을 만들 수 있는 벡터값 생성
 - GAN (Generative Adversarial Network)
