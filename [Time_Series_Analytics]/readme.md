@@ -37,3 +37,6 @@
 - 시계열분석의 한계점과 using alternative data
 
 
+## 4. AutoEncoder & GAN
+- AutoEncoder
+
