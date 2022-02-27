@@ -39,4 +39,4 @@
 
 ## 4. AutoEncoder & GAN
 - AutoEncoder
-
+- GAN (Generative Adversarial Network)
