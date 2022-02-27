@@ -42,4 +42,5 @@
 - AutoEncoder
   - 인풋과 같은 아웃풋을 만들 수 있는 벡터값 생성
 - GAN (Generative Adversarial Network)
+  - Tad-GAN
 - (추가로 언급하신 것) XAI
