@@ -8,7 +8,7 @@
 - AR(Auto Regression): 자기상관모형
 - MA(Moving Average): 이동평균모형
 
-- ARIMA (Auto-regressive Integrated Moving Average)
+- ARIMA (Auto-regressive Integrated Moving Average) : 자기회귀누적이동평균모형
 - SARIMA (Seasonal Auto-regressive Integrated Moving Average)
 
 
