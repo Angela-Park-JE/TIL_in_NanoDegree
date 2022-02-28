@@ -9,7 +9,7 @@
 - MA(Moving Average): 이동평균모형
 
 - ARIMA (Auto-regressive Integrated Moving Average)
-- SARIMA
+- SARIMA (Seasonal Auto-regressive Integrated Moving Average)
 
 
 ## 2. 머신러닝과 시계열분석
