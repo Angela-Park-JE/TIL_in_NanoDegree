@@ -5,10 +5,10 @@
 - 시계열 데이터 특징
 - 시계열 분석의 절차
 
-- AR(auto regression): 자기상관모형
-- MA(moving average): 이동평균모형
+- AR(Auto Regression): 자기상관모형
+- MA(Moving Average): 이동평균모형
 
-- ARIMA
+- ARIMA (Auto-regressive Integrated Moving Average)
 - SARIMA
 
 
