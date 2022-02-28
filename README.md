@@ -9,4 +9,4 @@ If you want to know what I'm doing and I'm interested in, here is my notion link
 
 
 ---
-`ND is initials of Nano Degree bootcamp in Learning Spoons Academy.`
+`ND is initials of Nano Degree bootcamp in Learning Spoons Academy. It had been last from Nov 8 2021 to Feb 28 2022. All of camp members were very smart and friendly. So If you want to search other talented people, I recommend you to hunt in my followers list! 😉`
