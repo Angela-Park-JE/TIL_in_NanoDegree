@@ -1,4 +1,4 @@
-# Time Series analytics
+# 💫 Time Series analytics
 시계열 분석 !!! I wanna be maewoo maewoo good at this 😚
 
 ## 1. 시계열 분석 
