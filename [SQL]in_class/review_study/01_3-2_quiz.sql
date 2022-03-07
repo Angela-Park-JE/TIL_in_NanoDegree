@@ -1,4 +1,5 @@
 -- NVL과 DECODE 를 활용해 CASE 표현식을 바꿔보기
+-- null 일 때와 아닐 떄를 조건부로 나누어서 값이 정해지도록 할 수 있다.
 SELECT employee_id, first_name, last_name, salary , commission_pct,
        CASE WHEN commission_pct IS NULL THEN salary
          ELSE salary + (salary* commission_pct)
