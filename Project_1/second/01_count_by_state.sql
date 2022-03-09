@@ -5,7 +5,7 @@ FROM sellers_modi
 GROUP BY "STATE";
 
 -- 결과
-
+```
 PE	9
 RN	5
 AM	1
@@ -29,7 +29,7 @@ BA	19
 PB	6
 RJ	171
 SP	1849
-
+```
 
 
 -- 고객 테이블에서 주 별 고객 수 (고유아이디)
@@ -39,4 +39,32 @@ FROM CUSTOMERS
 GROUP BY customer_state;
 
 -- 결과
-
+```
+PE	1652
+RN	485
+AM	148
+MG	11635
+RO	253
+GO	2020
+MS	715
+MT	907
+CE	1336
+SE	350
+RS	5466
+DF	2140
+ES	2033
+PA	975
+MA	747
+PI	495
+PR	5045
+SC	3637
+TO	280
+AC	81
+AL	413
+BA	3380
+PB	536
+RJ	12852
+AP	68
+RR	46
+SP	41746
+```
