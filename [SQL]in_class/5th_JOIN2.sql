@@ -68,3 +68,14 @@ SELECT a.employee_id,
 FROM employees a, employees b
 WHERE a.manager_id = b.employee_id
 ORDER BY 1;
+
+
+
+-- +.차집합 구할 때에는
+
+SELECT * 
+FROM TB_a as a 
+LEFT OUTER JOIN TB_b b
+		ON (a.ID = b.ID)
+WHERE b.ID IS NULL;  -- is NULL 활용해서 조인했을 때 비는 곳이 생기는 것을 데려오도록 한다.
+
