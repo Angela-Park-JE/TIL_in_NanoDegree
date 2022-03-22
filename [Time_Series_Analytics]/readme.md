@@ -1,6 +1,8 @@
 # 💫 Time Series analytics
 시계열 분석 !!! I wanna be maewoo maewoo good at this 😚
 
+공부하는 이유 (1) 이상치 분석에 관심이 많아서 (2) 예측 모델 공부 
+
 ## 1. 시계열 분석 
 - 시계열 데이터 특징
 - 시계열 분석의 절차
