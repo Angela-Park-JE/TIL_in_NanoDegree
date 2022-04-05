@@ -1,4 +1,5 @@
 # 0202-anscombe-seaborn-pandas-input.ipynb
+# eda 관련 혹은 시각화 관련 함수 모음
 
 # pandas, seaborn, numpy 
 # 변수를 잘 맞게 지정을 해주자. 나중에 헷갈린다.
